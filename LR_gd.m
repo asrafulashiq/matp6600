@@ -51,19 +51,19 @@ while iter < maxit && ...
     iter = iter + 1;
     % write your own code to choose the step size alpha
     % if backtracking is used, another while-loop should be inserted here
-    alp = 0.1; beta = 0.5;
-    t = 1;
-    f0 = eval_obj(w, b);
-    new_f = eval_obj(w-t*grad_w, b-t*grad_b);
-    
-    while new_f > f0 - alp * t * (norm(grad_w)^2+norm(grad_b)^2)
-       t = beta * t; 
-       new_f = eval_obj(w-t*grad_w, b-t*grad_b);
-    end
-    
-    alpha = t;
+%     alp = 0.1; beta = 0.5;
+%     t = 1;
+%     f0 = eval_obj(w, b);
+%     new_f = eval_obj(w-t*grad_w, b-t*grad_b);
 %     
-%     alpha = 0.00001;
+%     while new_f > f0 - alp * t * (norm(grad_w)^2+norm(grad_b)^2)
+%        t = beta * t; 
+%        new_f = eval_obj(w-t*grad_w, b-t*grad_b);
+%     end
+%     
+%     alpha = t;
+%     
+    alpha = 0.01;
     
     % update w and b
     

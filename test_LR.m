@@ -8,7 +8,7 @@ lam1 = 0.001;
 lam2 = 0.001;
 
 % make large maxit if needed
-maxit = 1000;
+maxit = 100;
 tol = 1e-2;
 
 %% call the solver LR_gd on the training data
