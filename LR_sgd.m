@@ -1,4 +1,4 @@
-function [w,b,hist_obj] = LR_gd(X,y,lam1,lam2,maxit,tol)
+function [w,b,hist_obj] = LR_sgd(X,y,lam1,lam2,maxit,tol)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -32,15 +32,16 @@ function [w,b,hist_obj] = LR_gd(X,y,lam1,lam2,maxit,tol)
 % other initial iterate can also be used
 w = zeros(n,1);
 b = 0;
+i = 1;
 
 % grad_w: the partial gradient of w
 % grad_b: the partial gradient of b
 
 % write your own function eval_grad to evaluate grad_w and grad_b
-[grad_w, grad_b] = eval_grad(w,b);
+[grad_w, grad_b] = eval_grad(w,b,i);
 
 % write your own function eval_obj(w,b)
-obj = eval_obj(w,b);
+obj = eval_obj(w,b,i);
 hist_obj = obj;
 iter = 0; 
 
@@ -48,7 +49,9 @@ iter = 0;
 while iter < maxit && ...
         norm(grad_w) + norm(grad_b) >= tol*max(1, norm(w)+norm(b))
     
-    iter = iter + 1;
+    iter = iter + 1;  
+    i = rem(iter,N) + 1;
+    
     % write your own code to choose the step size alpha
     % if backtracking is used, another while-loop should be inserted here
 %     alp = 0.1; beta = 0.5;
@@ -73,10 +76,10 @@ while iter < maxit && ...
     
     % evaluate the gradient for next iteration
     
-    [grad_w, grad_b] = eval_grad(w,b);
+    [grad_w, grad_b] = eval_grad(w,b,i);
     
     % write your own function eval_obj(w,b)
-    obj = eval_obj(w,b);
+    obj = eval_obj(w,b,i);
     
     % save the objective value
     hist_obj = [hist_obj; obj];
@@ -87,26 +90,26 @@ end % of main iteration
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    function [grad_w, grad_b] = eval_grad(w,b)
-        grad_w = zeros(n,1);
-        grad_b = 0;
+    function [grad_w, grad_b] = eval_grad(w,b,i)
+        xi = X(i,:)';
+        yi = y(i);
         
-        e_theta = exp(-(X*w+b).*y);
-        alph = e_theta ./ (1+e_theta) .* (-y);
-        grad_w = 1/N * X' * alph + lam1 * w;
-        grad_b = 1/N * sum(alph) + lam2 * b;
+        e_theta = exp(-(xi'*w+b).*yi);
+        alph = e_theta ./ (1+e_theta) .* (-yi);
+        grad_w = xi * alph + lam1 * w;
+        grad_b = alph + lam2 * b;
         
         % complete this function
     end % of function eval_grad
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    function obj = eval_obj(w,b)
-        obj = 0;
+    function obj = eval_obj(w,b,i)
+        xi = X(i,:)';
+        yi = y(i);
+        e_theta = exp(-(xi'*w+b).*yi);
         
-        e_theta = exp(-(X*w+b).*y);
-        
-        obj = 1/N * sum(log(1+e_theta)) + lam1/2 * norm(w)^2 + lam2/2 * b^2;
+        obj = log(1+e_theta) + lam1/2 * norm(w)^2 + lam2/2 * b^2;
    
         % complete this function
     end % of function eval_obj

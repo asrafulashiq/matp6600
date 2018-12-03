@@ -1,0 +1,91 @@
+------------------------
+------------------------
+lam1 : 0.000010	 lam1 : 0.000010
+	Gradient Descent:
+		Totol iteration: 1001
+		Total run-time: 10.7860
+		Classification accuracy for test data: 0.92
+
+	Newton's Method:
+		Totol iteration: 6
+		Total run-time: 5.3426
+		Classification accuracy for test data: 0.94
+
+------------------------
+------------------------
+lam1 : 0.001000	 lam1 : 0.001000
+	Gradient Descent:
+		Totol iteration: 1001
+		Total run-time: 10.6294
+		Classification accuracy for test data: 0.92
+
+	Newton's Method:
+		Totol iteration: 6
+		Total run-time: 5.1557
+		Classification accuracy for test data: 0.93
+
+------------------------
+------------------------
+lam1 : 0.100000	 lam1 : 0.100000
+	Gradient Descent:
+		Totol iteration: 1001
+		Total run-time: 10.4217
+		Classification accuracy for test data: 0.92
+
+	Newton's Method:
+		Totol iteration: 6
+		Total run-time: 5.1354
+		Classification accuracy for test data: 0.93
+
+------------------------
+------------------------
+lam1 : 1.000000	 lam1 : 1.000000
+	Gradient Descent:
+		Totol iteration: 1001
+		Total run-time: 10.5641
+		Classification accuracy for test data: 0.92
+
+	Newton's Method:
+		Totol iteration: 4
+		Total run-time: 3.1865
+		Classification accuracy for test data: 0.92
+
+------------------------
+------------------------
+lam1 : 10.000000	 lam1 : 10.000000
+	Gradient Descent:
+		Totol iteration: 369
+		Total run-time: 3.7093
+		Classification accuracy for test data: 0.88
+
+	Newton's Method:
+		Totol iteration: 4
+		Total run-time: 3.0852
+		Classification accuracy for test data: 0.88
+
+------------------------
+------------------------
+lam1 : 100.000000	 lam1 : 100.000000
+	Gradient Descent:
+		Totol iteration: 49
+		Total run-time: 0.5383
+		Classification accuracy for test data: 0.76
+
+	Newton's Method:
+		Totol iteration: 3
+		Total run-time: 2.1721
+		Classification accuracy for test data: 0.76
+
+------------------------
+------------------------
+lam1 : 1000.000000	 lam1 : 1000.000000
+	Gradient Descent:
+		Totol iteration: 29
+		Total run-time: 0.3021
+		Classification accuracy for test data: 0.54
+
+	Newton's Method:
+		Totol iteration: 3
+		Total run-time: 2.1825
+		Classification accuracy for test data: 0.54
+
