@@ -1,0 +1,8 @@
+------------------------
+------------------------
+lam1 : 0.001000	 lam1 : 0.001000
+	 Gradient Descent:
+		Totol iteration: 6
+		Total run-time: 5.2656
+		Classification accuracy for test data: 0.93
+

@@ -111,13 +111,7 @@ end % of main iteration
         D = diag(A);
         H_w = X'*D*X + lam1*eye(n);
         H_b = sum(A) + lam2;
-        
-%         for i=1:N
-%             H_w = H_w + A(i) * X(i,:)' * X(i,:);
-%             H_b = H_b + A(i);
-%         end       
-%         H_w = H_w + lam1 * eye(n);
-%         H_b = H_b + lam2;
+
     end
 
 

@@ -1,56 +1,48 @@
 ------------------------
 ------------------------
-lam1 : 0.010000	 lam1 : 0.010000
+tol : 0.010000	 lam1 : 0.001000	 lam1 : 0.001000
 	Stochastic Gradient Descent:
 		Totol iteration: 1001
-		Total run-time: 0.0949
+		Total run-time: 0.1022
 		Classification accuracy for test data: 0.91
 
 ------------------------
 ------------------------
-lam1 : 0.010000	 lam1 : 0.010000
+tol : 0.000100	 lam1 : 0.001000	 lam1 : 0.001000
 	Stochastic Gradient Descent:
-		Totol iteration: 1753
-		Total run-time: 0.1468
+		Totol iteration: 1001
+		Total run-time: 0.0919
 		Classification accuracy for test data: 0.91
 
 ------------------------
 ------------------------
-lam1 : 0.010000	 lam1 : 0.010000
+tol : 0.000001	 lam1 : 0.001000	 lam1 : 0.001000
 	Stochastic Gradient Descent:
-		Totol iteration: 10001
-		Total run-time: 0.9422
-		Classification accuracy for test data: 0.93
+		Totol iteration: 1001
+		Total run-time: 0.0898
+		Classification accuracy for test data: 0.91
 
 ------------------------
 ------------------------
-lam1 : 0.000001	 lam1 : 0.000001
+tol : 0.010000	 lam1 : 0.001000	 lam1 : 0.001000
 	Stochastic Gradient Descent:
-		Totol iteration: 10001
-		Total run-time: 0.7891
-		Classification accuracy for test data: 0.93
+		Totol iteration: 1001
+		Total run-time: 0.1047
+		Classification accuracy for test data: 0.91
 
 ------------------------
 ------------------------
-lam1 : 0.000001	 lam1 : 0.000001
+tol : 0.000100	 lam1 : 0.001000	 lam1 : 0.001000
 	Stochastic Gradient Descent:
-		Totol iteration: 10001
-		Total run-time: 0.7965
-		Classification accuracy for test data: 0.93
+		Totol iteration: 1001
+		Total run-time: 0.0848
+		Classification accuracy for test data: 0.91
 
 ------------------------
 ------------------------
-lam1 : 0.000001	 lam1 : 0.000001
+tol : 0.000001	 lam1 : 0.001000	 lam1 : 0.001000
 	Stochastic Gradient Descent:
-		Totol iteration: 5253
-		Total run-time: 0.4068
-		Classification accuracy for test data: 0.93
-
-------------------------
-------------------------
-lam1 : 0.000001	 lam1 : 0.000001
-	Stochastic Gradient Descent:
-		Totol iteration: 1540
-		Total run-time: 0.1385
-		Classification accuracy for test data: 0.92
+		Totol iteration: 1001
+		Total run-time: 0.0933
+		Classification accuracy for test data: 0.91
 

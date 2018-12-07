@@ -1,15 +1,32 @@
 ------------------------
 ------------------------
-lam1 : 0.010000	 lam1 : 0.010000
+lam1 : 0.001000	 lam1 : 0.001000
+	 Gradient Descent:
 		Totol iteration: 1001
-		Total run-time: 10.3286
+		Total run-time: 10.5840
 		Classification accuracy for test data: 0.92
 
 ------------------------
 ------------------------
-lam1 : 0.000001	 lam1 : 0.000001
+lam1 : 0.001000	 lam1 : 0.001000
 	 Gradient Descent:
-		Totol iteration: 2001
-		Total run-time: 20.5013
-		Classification accuracy for test data: 0.93
+		Totol iteration: 1001
+		Total run-time: 10.3807
+		Classification accuracy for test data: 0.92
+
+------------------------
+------------------------
+lam1 : 0.001000	 lam1 : 0.001000
+	 Gradient Descent:
+		Totol iteration: 1001
+		Total run-time: 10.3641
+		Classification accuracy for test data: 0.92
+
+------------------------
+------------------------
+lam1 : 0.001000	 lam1 : 0.001000
+	 Gradient Descent:
+		Totol iteration: 1001
+		Total run-time: 10.2871
+		Classification accuracy for test data: 0.92
 
